@@ -10,7 +10,6 @@ import {
   skills,
   services,
 } from "../../content_option";
-import { AboutMe } from "../../components/aboutMe";
 
 export const About = () => {
   return (
