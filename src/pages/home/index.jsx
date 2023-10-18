@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { AboutMe } from "../../components/aboutMe";
 import { RabotaVKadre } from "../../components/RabotaVKadre/RabotaVKadre";
 import { Photo } from "../../components/Photo/Photo";
+import { Contacts } from "../../components/Contacts/Contacts";
 
 export const Home = () => {
   return (
@@ -37,32 +38,6 @@ export const Home = () => {
                   />
                 </h1>
                 <p className="mb-1x">{introdata.description}</p>
-                <div className="intro_btn-action pb-5">
-                  <Link to="/portfolio" className="text_2">
-                    <div id="button_p" className="ac_btn btn ">
-                      Медиа
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
-                    </div>
-                  </Link>
-                  <Link to="/about">
-                    <div id="button_h" className="ac_btn btn">
-                      Обо мне
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
-                    </div>
-                  </Link>
-                  <Link to="/contact">
-                    <div id="button_h" className="ac_btn btn">
-                      Способы связи
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
-                    </div>
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
@@ -71,6 +46,7 @@ export const Home = () => {
       <AboutMe />
       <RabotaVKadre />
       <Photo />
+      <Contacts />
     </HelmetProvider>
   );
 };
