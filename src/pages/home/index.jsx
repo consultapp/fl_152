@@ -6,6 +6,7 @@ import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 import { AboutMe } from "../../components/aboutMe";
 import { RabotaVKadre } from "../../components/RabotaVKadre/RabotaVKadre";
+import { Photo } from "../../components/Photo/Photo";
 
 export const Home = () => {
   return (
@@ -69,6 +70,7 @@ export const Home = () => {
       </section>
       <AboutMe />
       <RabotaVKadre />
+      <Photo />
     </HelmetProvider>
   );
 };
